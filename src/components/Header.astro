@@ -19,9 +19,11 @@ import IconTiktok from '../assets/icon-tiktok.svg';
 		</div>
 		<div class="social-links">
 			
-			<RoundButton href="https://m.webtoo.ls/@astro" icon={IconDiscord.src}/>
+			<RoundButton href="https://m.webtoo.ls/@astro" sr="Follow on Discord" icon={IconDiscord.src}/>
 			
-			<RoundButton href="https://m.webtoo.ls/@astro" icon={IconTiktok.src}/>
+			<RoundButton href="https://m.webtoo.ls/@astro" sr="Follow on Tiktok" icon={IconTiktok.src}/>
+
+			<button class="subscribe-button" id="subscribe-newsletter">Subscribe</button>
 			
 			
 			<!-- <a href="https://m.webtoo.ls/@astro" target="_blank">
@@ -92,15 +94,25 @@ import IconTiktok from '../assets/icon-tiktok.svg';
 	}
 	.social-links { 
 		display: flex;
-		gap: 0.5em;
+		gap: 9px;
 	}
-	.social-links a {
+	/* .social-links a {
+	
+	} */
+
+	.subscribe-button {
 		display: flex;
 		align-items: center;
-		padding: 0.3em;
-		border-bottom: 0px;
-		background-color: var(--social-media-icon-background);
-		border-radius: 50%;		
+		padding: 0 0.4em 0;
+		color: var(--main-white);
+		font-size: 18px;
+		font-family: var(--font-atkinson);
+		font-weight: bold;
+		background-color: var(--round-button-background);
+		border-radius: 8px;
+		border-width: 2px;
+		border-color: var(--main-white);
+		border-style: solid;
 	}
 	@media (max-width: 720px) {
 		.social-links {
