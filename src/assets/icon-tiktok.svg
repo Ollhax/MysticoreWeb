@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="10.467021mm"
+   height="10.467021mm"
+   viewBox="0 0 10.467021 10.467021"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="icon-tiktok.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm"
+     inkscape:zoom="13.031954"
+     inkscape:cx="22.86687"
+     inkscape:cy="14.502813"
+     inkscape:window-width="1866"
+     inkscape:window-height="1224"
+     inkscape:window-x="94"
+     inkscape:window-y="41"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-99.747926,-143.40417)">
+    <g
+       style="fill:#000000;fill-opacity:1;stroke-width:1.00011;stroke-dasharray:none"
+       id="g29"
+       transform="matrix(0.43095223,0,0,0.43095223,101.53382,145.19006)">
+      <path
+         d="m 9,0 h 1.98 c 0.144,0.715 0.54,1.617 1.235,2.512 C 12.895,3.389 13.797,4 15,4 V 6 C 13.247,6 11.93,5.186 11,4.171 V 11 A 5,5 0 1 1 6,6 v 2 a 3,3 0 1 0 3,3 z"
+         id="path1-99"
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.00011;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>
