@@ -1,0 +1,17 @@
+---
+import BackgroundImage from '../assets/backdrop.jpg';
+---
+
+<body style={`--bg-image: url(${BackgroundImage.src});`}>
+  <slot />
+</body>
+<style>
+  body {
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	background-attachment: fixed;
+	backdrop-filter: blur(8px);
+  }
+</style>
