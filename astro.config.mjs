@@ -6,7 +6,8 @@ import { defineConfig, fontProviders } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	site: 'https://ollhax.github.io',
+	base: '/MysticoreWeb',
 	integrations: [mdx(), sitemap()],
 	fonts: [
 		{
