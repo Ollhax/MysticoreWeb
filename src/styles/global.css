@@ -197,6 +197,12 @@ hr {
 .round-button-icon {
 	filter: drop-shadow(var(--round-button-icon-shadow));
 }
+.subscribe-button {
+	display: flex;
+	align-items: center;
+	padding: 0 0.4em 0;
+	cursor: pointer;
+}
 
 /* Resize the video iframe for mobile devices: https://www.youtube.com/watch?v=X4t0JxiBeO0 */
 .video {
