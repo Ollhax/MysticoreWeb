@@ -19,6 +19,7 @@
 	--logo-shadow: 4px 4px 3px rgba(0, 0, 0, 0.856);
 	--button-text-shadow: 2px 2px 2px rgba(18, 11, 11, 0.856);
 	--round-button-background: rgb(9, 70, 0);
+	--round-button-background-hover: rgb(14, 104, 0);
 	--round-button-icon-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 
 	--box-shadow:
@@ -26,7 +27,7 @@
 		0 16px 32px rgba(var(--gray), 33%);
 }
 body {
-	font-family: var(--font-atkinson);
+	font-family: var(--font-inter);
 	margin: 0;
 	padding: 0;
 	text-align: left;
@@ -94,7 +95,7 @@ button {
 	/* padding: 0 0.4em 0; */
 	color: var(--main-white);
 	font-size: 18px;
-	font-family: var(--font-atkinson);
+	font-family: var(--font-inter);
 	font-weight: bold;
 	background-color: var(--round-button-background);
 	text-shadow: var(--button-text-shadow);
@@ -103,6 +104,10 @@ button {
 	border-color: var(--main-white);
 	border-style: solid;
 }
+button:hover {
+	background-color: var(--round-button-background-hover);
+}
+
 .prose p {
 	margin-bottom: 2em;
 }

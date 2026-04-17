@@ -3,7 +3,7 @@ const { href, text, icon, ...props } = Astro.props;
 ---
 
 <a href={href} class="fancy-button" target="_blank" {...props}>
-	
+
 	<!-- <div>
 		<img class="fancy-button-icon" src={icon}>
 		<p></p>
@@ -14,8 +14,8 @@ const { href, text, icon, ...props } = Astro.props;
 		{text}
 	</button>
 
-	
-	
+
+
 </a>
 
 <style>
@@ -29,18 +29,21 @@ const { href, text, icon, ...props } = Astro.props;
 		align-items: center;
 		border: none;
 		border-radius: 5px;
-		height: 1.8em;
+		height: 2.0em;
 		gap: 3px;
-		padding: 0.2em 0.35em;
+		padding: 0.2em 0.39em;
 		filter: drop-shadow(0px 0px 8px rgba(118, 227, 94, 0.6));
 		cursor: pointer;
 		text-decoration: none;
+		line-height: 0;
 		color: var(--main-color);
 		text-shadow: 0px 0px 6px var(--main-glow-color);
 	}
 	.fancy-button button {
 		background-color: rgb(0, 0, 0);
-		/* padding: 0.25em; */
+	}
+	.fancy-button button:hover{
+		background-color: rgb(6, 62, 0);
 	}
 	.fancy-button img {
 		height: 90%;
