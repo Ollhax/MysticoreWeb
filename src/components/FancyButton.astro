@@ -1,0 +1,52 @@
+---
+const { href, text, icon, ...props } = Astro.props;
+---
+
+<a href={href} class="fancy-button" target="_blank" {...props}>
+	
+	<!-- <div>
+		<img class="fancy-button-icon" src={icon}>
+		<p></p>
+	</div> -->
+
+	<button class="fancy-button">
+		<img src={icon} alt="" class="icon">
+		{text}
+	</button>
+
+	
+	
+</a>
+
+<style>
+	:root {
+		--main-color: rgb(225, 254, 165);
+		--main-glow-color: rgba(181, 253, 33, 0.9);
+	}
+	.fancy-button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: none;
+		border-radius: 5px;
+		height: 1.8em;
+		gap: 3px;
+		padding: 0.2em 0.35em;
+		filter: drop-shadow(0px 0px 8px rgba(118, 227, 94, 0.6));
+		cursor: pointer;
+		text-decoration: none;
+		color: var(--main-color);
+		text-shadow: 0px 0px 6px var(--main-glow-color);
+	}
+	.fancy-button button {
+		background-color: rgb(0, 0, 0);
+		/* padding: 0.25em; */
+	}
+	.fancy-button img {
+		height: 90%;
+		aspect-ratio: 1;
+		flex-shrink: 0;
+		color: var(--main-color);
+		filter: drop-shadow(0px 0px 2px var(--main-glow-color));
+	}
+</style>

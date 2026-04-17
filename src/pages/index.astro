@@ -3,7 +3,9 @@ import BaseHead from '../components/BaseHead.astro';
 import BaseLayout from '../components/BaseLayout.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
+import FancyButton from '../components/FancyButton.astro';
 import MysticoreLogo from '../assets/mysticore-logo.svg';
+import SteamIcon from '../assets/icon-steam.svg';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 ---
 
@@ -19,10 +21,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 			<p>
 				Mysticore is a survival strategy game for 1-4 players. Explore the shattered realms, build your base and defend it against massive enemy waves - all while leaving the busywork to your gnomes.
 			</p>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/admh2IM7aQI?si=4-HtMHCn3ZcWkfqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-			<p>
-				TODO STEAM LINK
-			</p>
+			<div class="video">
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/admh2IM7aQI?si=4-HtMHCn3ZcWkfqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<FancyButton text="Wishlist On Steam" icon={SteamIcon.src} href="https://drive.google.com/drive/folders/17neYlnZ6F3RPQPJxSimPbFi2LehoUxWc?usp=drive_link"/>
 			<a class="press-kit-link" href="https://drive.google.com/drive/folders/17neYlnZ6F3RPQPJxSimPbFi2LehoUxWc?usp=drive_link">[Press Kit]</a>
 		</main>
 		<Footer />

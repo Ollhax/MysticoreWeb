@@ -1,8 +1,8 @@
 ---
-const { href, icon, sr, ...props } = Astro.props;
+const { href, icon, sr, size=35, ...props } = Astro.props;
 ---
 
-<a href={href} class="round-button" target="_blank" {...props}>
+<a href={href} class="round-button" target="_blank" style={`width: ${size}px;`} {...props}>
 	<span class="sr-only">{sr}</span>
 	<img class="round-button-icon" src={icon}>
 </a>
@@ -14,8 +14,6 @@ const { href, icon, sr, ...props } = Astro.props;
 		padding: 0.0em;
 		background-color: var(--round-button-background);
 		border-radius: 50%;
-		
-		width: 35px;
 		aspect-ratio: 1;
 	}
 </style>

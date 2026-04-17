@@ -17,6 +17,7 @@
 	--text-color: #beedbb;
 	--text-shadow: 2px 2px 2px rgba(18, 11, 11, 0.856);
 	--logo-shadow: 4px 4px 3px rgba(0, 0, 0, 0.856);
+	--button-text-shadow: 2px 2px 2px rgba(18, 11, 11, 0.856);
 	--round-button-background: rgb(9, 70, 0);
 	--round-button-icon-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
 
@@ -86,6 +87,21 @@ p {
 	margin-bottom: 1em;
 	color: var(--text-color);
 	text-shadow: var(--text-shadow)
+}
+button {
+	/* display: flex;
+	align-items: center; */
+	/* padding: 0 0.4em 0; */
+	color: var(--main-white);
+	font-size: 18px;
+	font-family: var(--font-atkinson);
+	font-weight: bold;
+	background-color: var(--round-button-background);
+	text-shadow: var(--button-text-shadow);
+	border-radius: 8px;
+	border-width: 2px;
+	border-color: var(--main-white);
+	border-style: solid;
 }
 .prose p {
 	margin-bottom: 2em;
@@ -170,4 +186,18 @@ hr {
 }
 .round-button-icon {
 	filter: drop-shadow(var(--round-button-icon-shadow));
+}
+
+/* Resize the video iframe for mobile devices: https://www.youtube.com/watch?v=X4t0JxiBeO0 */
+.video {
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	position: relative;
+	margin-bottom: 25px;
+}
+.video iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }

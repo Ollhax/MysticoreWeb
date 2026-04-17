@@ -11,7 +11,7 @@ import IconTiktok from '../assets/icon-tiktok.svg';
 	<nav>
 		<!-- <h2><img src={IconMysticore.src}></h2> -->
 
-		<RoundButton href="/" icon={IconMysticore.src}/>
+		<RoundButton href="/" size=45 icon={IconMysticore.src}/>
 
 		<div class="internal-links">
 			<HeaderLink href="/">Mysticore</HeaderLink>
@@ -59,7 +59,7 @@ import IconTiktok from '../assets/icon-tiktok.svg';
 <style>
 	header {
 		margin: 0;
-		/* padding: 0 0.5em; */
+		padding: 0 0.3em 0 0;
 		background: rgb(var(--main-green));
 		box-shadow: 0 2px 8px rgba(var(--black), 5%);
 	}
@@ -76,21 +76,27 @@ import IconTiktok from '../assets/icon-tiktok.svg';
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0.3em;
+		padding: 0.2em;
 	}
 	nav a {		
 		color: var(--black);
 		/* border-bottom: 4px solid transparent; */
+
 		text-decoration: none;
 	}
 	nav a.active {
 		text-decoration: none;
+		background-color: var(--round-button-background);
+		border-radius: 8px;
+		
 		/* border-bottom-color: var(--accent); */
 	}
 	.internal-links { 
 		position: absolute;
   		left: 50%;
   		transform: translateX(-50%);
+		display: flex;
+		flex-direction: row;
 	}
 	.social-links { 
 		display: flex;
@@ -99,20 +105,10 @@ import IconTiktok from '../assets/icon-tiktok.svg';
 	/* .social-links a {
 	
 	} */
-
 	.subscribe-button {
 		display: flex;
 		align-items: center;
 		padding: 0 0.4em 0;
-		color: var(--main-white);
-		font-size: 18px;
-		font-family: var(--font-atkinson);
-		font-weight: bold;
-		background-color: var(--round-button-background);
-		border-radius: 8px;
-		border-width: 2px;
-		border-color: var(--main-white);
-		border-style: solid;
 	}
 	@media (max-width: 720px) {
 		.social-links {
