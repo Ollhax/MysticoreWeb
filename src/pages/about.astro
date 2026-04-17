@@ -51,14 +51,6 @@ import ProfileOlle from '../assets/pic-olle.jpg';
 	.background-plate p {
 		 margin-bottom: 2em;
 	}
-	.profile-contents {
-		display: flex;
-		flex-direction: column;
-	}
-	.gnista-logo {
-		max-width: 70%;
-  		max-height: 70%;
-	}
 	.profile-entry {
 		display: flex;
 		flex-wrap: nowrap;
@@ -71,8 +63,30 @@ import ProfileOlle from '../assets/pic-olle.jpg';
 		margin: 0.5em 0 0.5em;
 		text-align: left;
 	}
+	@media (max-width: 650px) {
+		.profile-entry {
+			flex-direction: column;
+			text-align: center;
+			align-items: center;
+		}
+		.profile-entry p {
+			text-align: center;
+		}
+	}
 	.profile-entry img {
 		width: 175px;
 		height: 175px;
+	}
+	.profile-contents {
+		display: flex;
+		flex-direction: column;
+	}
+	.gnista-logo {
+		max-width: 70%;
+	}
+	@media (max-width: 650px) {
+		.gnista-logo {
+			max-width: 100%;
+		}
 	}
 </style>
