@@ -9,14 +9,13 @@ import IconX from '../assets/icon-x.svg';
 import IconBluesky from '../assets/icon-bluesky.svg';
 import IconInstagram from '../assets/icon-instagram.svg';
 import IconYoutube from '../assets/icon-youtube.svg';
-import SubscribeButton from './SubscribeButton.astro';
 ---
 
 <header>
 	<nav>
 		<!-- <h2><img src={IconMysticore.src}></h2> -->
 
-		<RoundButton href="/" size=45 icon={IconMysticore.src}/>
+		<RoundButton href="/" size=45 target="_self" icon={IconMysticore.src}/>
 
 		<div class="header-link-div">
 			<HeaderLink class="header-link" href="/">Mysticore</HeaderLink>
