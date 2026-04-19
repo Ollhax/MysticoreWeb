@@ -15,7 +15,9 @@ import IconYoutube from '../assets/icon-youtube.svg';
 	<nav>
 		<!-- <h2><img src={IconMysticore.src}></h2> -->
 
-		<RoundButton href="/" size=45 target="_self" icon={IconMysticore.src}/>
+		<div class="header-main-icon">
+			<RoundButton href="/" size=45 target="_self" icon={IconMysticore.src}/>
+		</div>
 
 		<div class="header-link-div">
 			<HeaderLink class="header-link" href="/">Mysticore</HeaderLink>
@@ -93,6 +95,11 @@ import IconYoutube from '../assets/icon-youtube.svg';
 	@media (max-width: 800px) {
 		.social-links {
 			display: none;
+		}
+	}
+	@media (max-width: 800px) {
+		.header-main-icon {
+			visibility: hidden;
 		}
 	}
 </style>
